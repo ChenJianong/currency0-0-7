@@ -1,0 +1,55 @@
+
+body {
+  font-family: 'Helvetica', 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+}
+
+.header{
+    background-color:#deab1e;
+   font-size: 2.5em;
+  height: 1.5em;
+  padding: 0.1em;
+  display:grid;
+  justify-items:center;  
+  align-items:center;  
+}
+
+
+#addDialogContainer > *{
+    text-align:center;
+  padding: 1em;
+  border-style:solid;
+  border-color:#deab1e;
+  margin: 3em;
+  height: 11em;
+  font-size:1.5em;
+  }
+
+#Exchangerate {
+   padding:0.1em;
+	text-align:center;
+  
+}
+
+.dialog-buttons > #output{
+  padding:0.8em;
+  font-size: 0.8em;
+}
+
+#addDialogContainer2 > *{
+    text-align:center;
+  padding: 1em;
+  border-style:solid;
+  border-color:#deab1e;
+  margin: 3em;
+  height: 11em;
+  font-size:1.5em;
+  }
+
+.dialog-buttons1 > #output1{
+  padding:0.8em;
+  font-size: 0.8em;
+}
+

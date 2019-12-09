@@ -1,0 +1,105 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/a8fc2a76-fbc1-42a8-99b7-40b37fad895b%2Ffavicon.png?v=1573770378613"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="grid-container" onload="changeCurrency()">
+      <div class="header">
+        <span>Currency App</span>
+  
+      </div>
+
+      <div id="addDialogContainer">
+        <div class="dialog">
+          <div class="dialog-title">CAD Exchange</div>
+          <div class="dialog-body">
+            <select id="selectCurrency" aria-label="Select Currency to Exchange from Cad">
+              <option value="1">Hong Kong Dollar HKD</option>
+              <option value="2">Icelandic Króna ISK</option>
+              <option value="3">Philippine Peso PHP</option>
+              <option value="4">Danish Krone DKK</option>
+              <option value="5">Hungarian Forint HUF</option>
+              <option value="6"> Czech Koruna CZK</option>
+              <option value="7"> Pound sterling GBP</option>
+              <option value="8">Romanian Leu RON</option>
+              <option value="9">Swedish Krona SEK</option>
+              <option value="10">Indonesian Rupiah IDR</option>
+              <option value="11">Indian Rupee INR</option>
+              <option value="12">Brazilian Real BRL</option>
+              <option value="13">Russian Ruble RUB</option>
+              <option value="14">United States Dollar USD</option>
+              <option value="15">Euro EUR</option>
+              <option value="16">Chinese Yuan CNY</option>
+              <option value="17">Japanese Yen JPY</option>
+              <option value="18">Korean Won KRW</option>
+            </select>
+          </div>
+          <div class="dialog-buttons">
+            <button id="butDialogAdd" class="button" onclick="changeCurrency()">
+              Choose</button
+            ><br />
+            <pre id="Exchangerate"></pre>
+            <input type="text" id="input" /><br />
+            <button onclick="calcAmount()">
+              Exchange
+            </button>
+            <div id="output"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="addDialogContainer2">
+        <div class="dialog">
+          <div class="dialog-title">USD Exchange</div>
+          <div class="dialog-body">
+            <select id="selectCurrency1" aria-label="Select Currency to Exchange from USD">
+              <option value="1">Hong Kong Dollar HKD</option>
+              <option value="2">Icelandic Króna ISK</option>
+              <option value="3">Philippine Peso PHP</option>
+              <option value="4">Danish Krone DKK</option>
+              <option value="5">Hungarian Forint HUF</option>
+              <option value="6"> Czech Koruna CZK</option>
+              <option value="7"> Pound sterling GBP</option>
+              <option value="8">Romanian Leu RON</option>
+              <option value="9">Swedish Krona SEK</option>
+              <option value="10">Indonesian Rupiah IDR</option>
+              <option value="11">Indian Rupee INR</option>
+              <option value="12">Brazilian Real BRL</option>
+              <option value="13">Russian Ruble RUB</option>
+              <option value="14">Canadian Dollar CAD</option>
+              <option value="15">Euro EUR</option>
+              <option value="16">Chinese Yuan CNY</option>
+              <option value="17">Japanese Yen JPY</option>
+            </select>
+          </div>
+          <div class="dialog-buttons1">
+            <button id="butDialogAdd1" class="button" onclick="changeCurrency1()">
+              Choose</button
+            ><br />
+            <pre id="Exchangerate1"></pre>
+            <input type="text" id="input1" /><br />
+            <button onclick="calcAmount1()">
+              Exchange
+            </button>
+            <div id="output1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--grid-container-->
+
+    <script src="client.js"></script>
+  </body>
+</html>
